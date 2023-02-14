@@ -1,0 +1,461 @@
+.body {
+  padding: 80px;
+  background-color:white;
+}
+#div1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #aaaaaa;
+  padding: 10px;
+}
+
+.theatre-search {
+  width: 100%;
+  height: 600px;
+  background-image: url("../images/wp2411501.jpg");
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@font-face {
+  font-family: 'Marcha';
+  src: url('Marcha.eot');
+  src: url('Marcha.eot?#iefix') format('embedded-opentype'),
+      url('Marcha.woff2') format('woff2'),
+      url('Marcha.woff') format('woff'),
+      url('Marcha.ttf') format('truetype'),
+      url('Marcha.svg#Marcha') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-size: large;
+}
+
+.search-container {
+  width: 60%;
+  height: 30%;
+  background-color: #201c2b;
+  opacity: 0.8;
+  padding: 20px;
+  color: white;
+}
+.search-container .search {
+  width: 80%;
+  height: 10%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.page-title {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 45px;
+}
+.button1 {
+  background-color: #4caf50;
+} /* Green */
+.button2 {
+  background-color: #ce225a;
+}
+
+/*For the Cinema Picks Section*/
+.photo-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  margin-top: 0%;
+}
+.photo-grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
+  scroll-padding-right: 5%;
+}
+#first-item {
+  order: 1;
+}
+#last-item {
+  order: -1;
+}
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 19%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 20px;
+  overflow: hidden;
+}
+.text {
+  position: absolute;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT";
+  font-style:oblique;
+  background: #670f4c;
+  padding: 20px;
+  text-transform: capitalize;
+}
+.photo-grid-item:hover .text{
+  transform: translate(50px, 100px);
+}
+
+.photo-grid-item:hover{
+  transform: rotate(20deg);
+}
+/* For the Main Theatre Pics Section*/
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 300px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 0%;
+}
+
+.container .box {
+  position: relative;
+  width: 30%;
+  height: 72%;
+  background-color: black;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .box .foto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 1;
+}
+.container .box:hover .foto {
+  top: 20px;
+  left: calc(50%-40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  
+}
+
+.container .box .content {
+  position: absolute;
+  top: 100%;
+  height: calc(100%-100px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.container .box:hover .content {
+  top: 100px;
+  opacity: 1;
+}
+
+.container .box .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.container .box p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 15px;
+}
+
+.container .box a{
+  border-style: solid;
+}
+.container .box a:hover{
+  transform: skew(20deg);
+}
+
+/* For the Secondary Theatre Pics */
+.other-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 0%;
+}
+.other-container .square {
+  position: relative;
+  width: 23%;
+  height: 60%;
+  background-color: black;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.other-container .square .foto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.other-container .square:hover .foto {
+  top: 20px;
+  left: calc(50%-40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.other-container .square .content {
+  position: absolute;
+  top: 100%;
+  height: calc(100%-100px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.other-container .square:hover .content {
+  top: 100px;
+  opacity: 1;
+}
+
+.other-container .square .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+  text-transform:capitalize;
+}
+
+.other-container .square p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 15px;
+}
+
+
+.thelinks a:link{
+  color: maroon;
+}
+
+.thelinks a:visited{
+  color:black;
+}
+
+.thelinks a:active{
+  color:blue;
+}
+
+
+.available{
+  background-color:rgb(221, 188, 188);
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  border-radius: 7px;
+}
+
+.promotion{
+  display: flex;
+  flex-direction: row;
+  position:relative;
+
+  
+}
+
+#panel {
+  padding: 5px;
+  text-align: center;
+  background-color: #eecccc;
+  border: solid 1px #c3c3c3;
+  display: none;
+}
+
+/*for the Record breakers table*/
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  margin-bottom: 2%;
+  font-size: 0.9em;
+  min-width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #670f4c;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  border-style:groove;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid#670f4c;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #670f4c;
+}
+/*For the FAQ*/
+.rate-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  margin-bottom: 2%;
+  font-size: 0.9em;
+  min-width: 30%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.rate-table thead tr {
+  background-color: gray;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  border-style: double;
+  animation-name:colored;
+  animation-duration: 25s;
+}
+@keyframes colored{
+  0% {background-color:#670f4c;}
+  25% {background-color:pink;}
+  50% {background-color: burlywood;}
+  75% {background-color:chocolate};
+  100% {background-color: gray;}
+}
+.rate-table th,
+.rate-table td {
+  padding: 12px 15px;
+}
+.rate-table tbody tr.active-row {
+  font-weight: bold;
+  color: #670f4c;
+}
+.rate-table li {
+  float: inline-start;
+}
+.rate-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+.dropbtn {
+  background-color: #ce225a;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropbtn{
+transform: scale(1,1.5);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+/*FAQ*/
+.move1{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 300px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 0%;
+  position: relative;
+  float:right;
+}
+
+.container1 .box1 {
+  position: relative;
+  width: 100%;
+  height: 72%;
+  background-color:white;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container1 .box1 .foto1 {
+ animation-name:rotatingfoto;
+ animation-duration:50s;
+}
+ 
+@keyframes rotatingfoto{
+  0% {transform:rotateY(360deg);}
+  50% {transform:rotateY(180deg);}
+  100% {transform:rotateY(0deg)}
+}
+
+/*rating*/
+.move table{
+  background-color: whitesmoke; 
+  outline-style: dotted; 
+  outline-color: maroon; 
+  outline-width: 2px;
+  outline-offset: 3px;
+}
+.move:hover{
+  transform:skew(20deg);
+}

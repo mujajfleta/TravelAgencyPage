@@ -1,0 +1,526 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  margin-right: 0px;
+  font-family: Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ce225a;
+}
+a:hover {
+  background-color: #670f4c;
+  color: white;
+}
+a:active {
+  background-color: #201c2b;
+}
+#arrow-link:hover {
+  background-color: #fff;
+}
+.blog-link {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbarLi {
+  float: left;
+}
+
+.navbarLiLink {
+  display: inline-block;
+  color: #670f4c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.navbarLi a:hover {
+  background-color: #361f33;
+  color: white;
+}
+
+.icon {
+  margin-right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #670f4c;
+  color: white;
+  height: 2%;
+}
+
+.booking {
+  width: 100%;
+  height: 600px;
+  background-image: url("../images/background.jpg"),
+    url("../images/icon/air6.png");
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Booking Form */
+.booking-form {
+  width: 50%;
+  height: 40%;
+  background-color: #201c2b;
+  opacity: 0.8;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.search {
+  width: 120%;
+  height: 15%;
+  border-radius: 5px;
+}
+.date {
+  width: 110%;
+  height: 15%;
+  background-color: #670f4c;
+  color: white;
+  border: none;
+}
+
+.booking-button {
+  width: 100px;
+  height: 50px;
+  margin-top: 100px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #ce225a;
+  border-radius: 10px;
+  border: none;
+}
+
+.active {
+  background-color: #ce225a;
+  color: white;
+  border-radius: 5;
+}
+
+.title {
+  padding-right: 20px;
+  float: right;
+  color: #ce225a;
+  font-weight: 800;
+}
+
+.price {
+  padding: 10px;
+  background-color: #ce225a;
+  color: white;
+  border-radius: 20px;
+  float: left;
+}
+
+.ofert {
+  margin-top: 20vw;
+  padding: 5px;
+  color: white;
+  background-color: #ce225a;
+  border-radius: 20px;
+  width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+  .ofert {
+    margin-top: 40vw;
+    padding: 5px;
+    color: white;
+    background-color: #ce225a;
+    border-radius: 20px;
+    width: 60%;
+  }
+}
+
+.title-post {
+  color: #e95150;
+  font-weight: 800;
+  padding-left: 20px;
+}
+
+.price-post {
+  padding: 5px;
+  color: white;
+  background-color: #e95150;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.image-link {
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 400px;
+  width: 100%;
+  /* margin: 20px 80px 0 0; */
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.main-post {
+  background-image: url("../images/Paris.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  width: 30%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+.other-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+
+.left-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.right-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+}
+
+.first-post {
+  background-image: url("../images/Thailand.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.second-post {
+  background-image: url("../images/maldives-island.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);
+  width: 80%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.third-post {
+  background-image: url("../images/Tokyo.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);
+  width: 80%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.fourth-post {
+  background-image: url("../images/Finland.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);
+  width: 80%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+  width: 90%;
+  height: 300px;
+}
+
+.post-experiences {
+  width: 19%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.12);
+  margin-left: 40px;
+}
+
+#last {
+  margin-right: 60px;
+}
+
+.photo-experience {
+  height: 50%;
+  width: 100%;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+}
+
+.description-experience {
+  padding: 0px 5px 30px 5px;
+}
+
+.travel-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 80px;
+  width: 90%;
+  height: 150px;
+}
+
+#first-style {
+  margin-left: 0;
+}
+
+.style {
+  width: 19%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.12);
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+/* footer */
+
+.footer-distributed {
+  background: #670f4c;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Making footer responsive */
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+#p1 {
+  margin-top: -150px;
+}
+
+.svg-wrapper {
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-10);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -510;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -510;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 900;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+    height: 85px;
+    width: 250px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}

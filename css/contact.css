@@ -1,0 +1,36 @@
+.contact-details {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-table tr th {
+  background-color: #670f4c;
+  color: #ffffff;
+}
+
+.coming-soon,
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.submit {
+  cursor: pointer;
+  border-radius: 5em;
+  border-color: white;
+  color: #fff;
+  padding: 10px 40px 10px 40px;
+  background: linear-gradient(to right, #ce225a, #361f33);
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
