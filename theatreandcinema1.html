@@ -1,0 +1,498 @@
+<!DOCTYPE HTML>
+<HTML>
+<Head>
+    <Title>Travel For Living</Title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel = "icon" href ="images/icon/images.png" type = "image/x-icon">
+    <link rel="stylesheet" href="css/stylefortheatreandcinema.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <script defer src="fontawesome/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/theatre.js"> </script>
+    
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+
+
+    <style>
+        mark { 
+            background-color:khaki;
+            color: black;
+          }
+    </style>
+    
+</Head>
+<Body >
+    <a href="index.html">
+    <div class="icon">
+        <img style="background-color: #670F4C" src="images/icon/air6.png" width="5%" height="2%"/>
+        <h3>Travel For Living</h3>
+    </div>
+    </a>
+    <div class="navbar">
+            <ul>
+                <li class="navbarLi"><a class="navbarLiLink " href="index.html"><strong>Home</strong></a></li>
+                <li class="navbarLi"><a class="navbarLiLink " href="flightandhotels.html"><strong>Hotels</strong></a></li>
+                <li class="navbarLi"><a class="navbarLiLink " href="theatreandcinema1.html"><strong>Theatre&Cinema</strong></a></li>
+                <li class="navbarLi" style="float:right"><a class="navbarLiLink "  href="#about"><strong>Sign up</strong></a></li>
+                <li class="navbarLi" style="float:right"><a class="active navbarLiLink" href="login.html" style="background-color: #CE225A;"><strong>Login</strong></a></li>
+            </ul>
+     </div>
+
+    <div class="theatre"> 
+        <div class="theatre-search">
+        <form action="" class="search-container">
+            <h2>          Theatre and Cinema   
+                <br> Experience the joy of visual art!</h2>
+                 <input type="text" class="search" placeholder="Search avenue or show">
+                 <button class="button button2"><strong>Find!</strong> </button>
+        </form>
+    </div>
+
+    <div class="body">
+
+    <div class="page-title"> <h1 id="beginning" style="color: maroon; text-shadow: 2px 1px #ff0000;">Theatre&Cinema </h1> </div>
+    <p>For tickets to <a href="#London">London</a> theatre shows and for tickets to all the latest musicals, plays and comedy such as<abbr title="The Apollo Victoria Theatre"><i> Wicked</i></abbr>, <i>The Lion King</i> or <i>Les Miserables</i> - you'll find a range of brilliant offers right here! Not sure where to start? Browse a complete list of all theatre offers.<br>
+    <br> Browse our list of the <mark id="tips">Top 10 Theatre Shows</mark> to buy tickets to London's most popular shows, or search directly for a show of your choice.<br>
+    <br>London is home to arguably the world’s best theatre scene, with millions of visitors flocking to the area to enjoy everything from blockbuster musicals to crowd-pleasing comedies, classic revivals and cutting-edge drama. You can join them with our selection of last minute theatre tickets, perfect if you are planning London theatre break.</p>
+  
+
+
+    <div><h2 style="color: maroon;font-size: 20px; font-family: 'Marcha';" ><bold>Our TOP Theatre picks for this week</bold></h2></div>
+
+
+  <!--Main Pics Theatre-->
+<div class="container"> 
+
+    <div class="box">
+        <div class="content">
+            <h3> The Tina Turner</h3>
+            <p>Not only she broke the rules, she rewrote them!
+                <br>10£ per ticket.<a href="#">Get yours!</a></p>
+                </div>
+
+         <div class="foto"><img src="images\TinaTheatre.jpg" width="100%" height="100%"></div>     
+    </div>
+
+    <div class="box">
+           <div class="content">
+            <h3> Wicked</h3>
+            <p>Celebrating 15 years at the Apolo Victoria Theatre
+                <br>12£ per ticket.<a href="#">Get yours!</a></p>
+        </div>
+
+         <div class="foto"><img src="images\Wicked - 800x446 (1).jpg" width="100%" height="100%"></div>   
+    </div>
+
+    <div class="box">
+        <div class="content">
+         <h3> O.E.L</h3>
+         <p>Based on Neil Gaiman's bestselling novel.
+            <br>10£ per ticket.<a href="#">Get yours!</a></p>
+     </div>
+
+      <div class="foto">
+          <img src="images\Ocean at the End of the Lane - 800x446 (1).jpg" width="100%" height="100%">
+      </div>   
+ </div>
+</div>
+
+<!--Secondary Pics Theatre --> 
+<div class="other-container">
+    <div class="square">
+        <div class="content">
+            <h3> The Great Gatsby</h3>
+            <p>Now is your time to step inside the novel.
+            <br>All it takes is a 15£ ticket.<a href="#">Get yours!</a></p>
+        </div>
+
+         <div class="foto"><img src="images\Gatsby 800x446.jpg" width="100%" height="100%"></div>     
+    </div>
+
+    <div class="square">
+        <div class="content">
+            <h3> The Mousetrap</h3>
+            <p>The world’s longest running play is back in the West End. 
+            <br> only 15£ per ticket.<a href="#">Get yours!</a>
+        </div>
+         <div class="foto"><img src="images\Mousetrap_JUL21_TTG_370x205.jpg" width="100%" height="100%"></div>     
+    </div>
+
+    <div class="square">
+        <div class="content">
+            <h3> Pride and Prejudice</h3>
+            <p>Let the crazy matchmaking begin!
+                <br> 15£ per ticket.<a align="left" href="#">Get yours!</a></p>
+        </div>
+
+         <div class="foto"><img src="images\P+P_840x580_TTix_V2[4].jpg" width="100%" height="100%"></div>     
+    </div>
+
+    <div class="square">
+        <div class="content">
+            <h3> Circus 1903</h3>
+            <p>From contortionists, acrobats to musicians and much more!
+            <br> 15£ per ticket.<a align="left" href="#">Get yours!</a></p>
+        </div>
+
+         <div class="foto"><img src="images\Circus 1903 - 370x205.jpg" width="100%" height="100%"></div>     
+    </div>
+
+</div>
+
+<!-- Main Cinema Pics-->
+<div><h2 style="color: maroon; font-size: 20px; font-family: 'Marcha';" ><bold>Our TOP Cinema picks for this week</bold></h2>
+<div class='photo-grid-container'>
+
+    <div class='photo-grid'>
+      <article id="first-item" class="photo-grid-item">
+        <div class="text"> <strong>Harry Potter</strong></div> 
+        <img src='images\harry potter.jpg' alt="Harry Potter" width="100%" height="100%">     
+      </article>
+
+      <article class="photo-grid-item">
+        <div class="text"> <strong>Prince of Egypt</strong></div>
+        <img src='images\theprinceofegypt.jpg' alt="Prince of Egypt" width="100%" height="100%"/>
+      </article>
+
+      <article class='photo-grid-item'>
+        <div class="text"> <strong>Life of PI</strong></div>
+        <img src='images\life of pi.png'alt="Life of PI" width="100%" height="100%">
+      </article>
+
+      <article class='photo-grid-item'>
+        <div class="text"> <strong>The Mousetrap</strong></div>
+        <img src='images\themousetrap.jpg' alt="The Mousetrap" width="100%" height="100%"/>
+      </article>
+
+      <aricle id="last-item" class="photo-grid-item" >
+        <div class="text"> <strong>Curious Incident</strong></div>
+        <img src='images\Curious Incident.jpg'alt="Curious Incident" width="100%" height="100%">
+        
+
+    </div>
+  </div>
+ </div> 
+<br>
+</br>
+
+<h3 style="color: maroon;font-size: 20px;">Why we should keep going to the movies?</h3>
+<div class="promotion">
+<div style="margin-left:0px; margin-right: auto;">
+<ol>
+    <li>Time Out
+        <ul type="square">
+            <li > Movie time is stress-free time</li>
+            <li> It takes you from the real world into a reel world.</li>
+         </ul>
+    </li>
+    <br>
+    <li>Family Time
+    <ul type="square">
+        <li>Interesting for all ages</li>
+        <li>Endless choicees</li>
+    </ul> 
+<br>
+    <li>
+    <ul type="square">Perfect Date
+        <li>
+            The safest and most comfortable place.
+        </li>
+    </ul>
+    </li>
+<br>
+    <li>
+        <ul style="list-style-type:disc">Released Emotions
+        <li>
+            Cry, Laugh. We do not judge.
+        </li>
+        <li>
+            Creating connections to the protagonists and their stage personas.
+        </li>
+    </ul>
+
+    </li>
+
+</ol>
+</div>
+
+<div style=" margin-right: 0px; margin-left: auto; float:right;">
+    <video width="400" height="240" controls>
+        <source src="video\FriendsTheatre.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video width="400" height="240" controls>
+        <source src="video\Production.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+</div>
+</div>
+<div class="thelinks">
+<h3 style="font-size: 20px;">London theatres close to your hotel</h3>
+<ul type="square">
+    <li><a href="https://www.roh.org.uk"> Royal Opera House></a></li>
+    <li><a href="https://www.shakespearesglobe.com" rel="noopener noreferrer"> Shakespeare's Globe> </a></li>
+    <li><a href="https://www.nationaltheatre.org.uk"> The National Theatre></a></li>
+    <li><a href="https://www.unicorntheatre.com"> The Unicorn Theatre></a></li>
+    <li><a href="https://coliseum.theatre-tickets.com/tickets">The London Coliseum></a></li>
+  </ul>
+</div>
+<div class="available">
+    <div style="flex-direction: column;">
+    <p> <pre>People attending        Event No.  </pre> </p>
+    <form oninput="sumresult.value = parseInt(A.value) 
+    - parseInt(B.value)">
+<input type="number" name="A" value="10" /> +
+<input type="range" name="B" value="5" min="0" max="5" />
+<!-- output tag -->Availability: <output name="sumresult"></output>
+</form>
+<br>
+<form action=" ">
+    <label for="location">Or, Choose your current location:</label>
+    <input list="locations" name="location" id="location">
+    <datalist id="locations">
+      <option value="Notting Hill">
+      <option value="Richmond">
+      <option value="Earls Court">
+      <option value="Croydon">
+      <option value="Paddington">
+    </datalist>
+    <input type="submit" value="Search">
+  </form>
+  </div>
+  <div class="discounts" style="flex-direction: column;margin-right: 0px; margin-left: auto;">
+    <p id="disc1" style="color:maroon">Theatre Discount for our clients: 111789&#235HZ&#199</p> <!--&#199 ç-->
+    <button id="fadein">Hide code</button>
+    <audio controls> <source src="audio\ThetareDiscount.mp3" type="audio/mpeg"></audio> 
+    <p id="disc2" style="color:maroon">Cinema Discount for our clients: 3467&#231JP10&#203</p> <!--&#203 ë-->
+    <button id="fadein2">Hide code</button>
+    <audio controls> <source src="audio\CinemaDiscount.mp3" type="audio/mpeg"></audio>
+
+</div>
+</div>
+
+
+
+<div class="">
+    <div><h3 style="color: maroon;font-size: 20px;"><bold><a name="London">London's</a> rich theatre story</bold></h3>
+<p>Although the first purpose-built London theatres were found in East London and Southwark, its history can be traced all the way back to the 17th century, with the opening of the Theatre Royal on Drury Lane in 1663. The current building to hold that name is the fourth, and was opened in 1812.
+    <br><br>Many of London’s theatres date back to the 19th or early 20th centuries, and are often filled with lavish neo-classical and art deco features. Today, London is home to almost 40 theatres, and continues to go from strength-to-strength, with a record breaking 14.5 million London theatre tickets sold in 2013.</p>
+</div>
+
+
+<h3 style="color: maroon;font-size: 20px;" id="teksti1">Record-breaking theatre shows</h3>
+<div id="panel"> Most watched in London Cinema's this season</div>
+    <p style="color: maroon; ">If you’re looking for some ideas, why not catch a bit of theatrical history with one of the record-breaking shows currently playing in London theatres.
+        <br> The West End is currently home to the world’s longest running play – Agatha Christie’s <i>The Mousetrap</i>, which has been running for more than 60 years. <br>
+        <br>Meanwhile, the longest running musical is <i> Miserables</i>, which has been wowing crowds for over thirty years – having opened in October 1985 (and not far behind is Andrew Lloyd Webber’s classic, <i >Phantom of the Opera</i>, which opened the following year). Another record-breaking musical is Disney’s <i>The Lion King</i>, which has earned more than $6billion worldwide.</p>
+        
+<table class="content-table">
+    <thead>
+    <tr>
+        <th align="center">Top London Theatre tickets</th>
+        <th align="center"> Popular Theatre Shows </th>
+        <th align="center"> Top Categories </th>
+    </tr>
+    </thead>
+
+    <tr>
+        <td> <u><a href="#">Book of Mormon</a></u> </td>
+        <td> The Woman in Black </td>
+        <td> Last Minute Availability </td>
+    </tr>
+    <tr>
+        <td> <u><a href="#">Wicked</a></u> </td>
+        <td> Come From Away </td>
+        <td> Musicals </td>
+    </tr>
+    <tr>
+        <td><u><a href="#">Mamma Mia</a></u></td>
+        <td> Only Fools and Horses </td>
+        <td> Plays </td>
+    </tr>
+    <tr>
+        <td> <a href="#"><u>Matilda&#9830</u></a> </td>
+        <td> The play that goes wrong </td>
+        <td> Comedy </td>
+    </tr>
+    <tr>
+        <td> <u><a href="#">Tina - The Tina Turner</a></u> </td>
+        <td> The Mousetrap </td>
+        <td> Days Out </td>
+    </tr>
+</table>
+</div>
+
+<div class="move1">
+<!-- FAQ -->
+<div>
+<table class="rate-table">
+    <thead>
+        <th>FAQ</th>
+    </thead>
+    <tr>
+        <td> <p id="demo">How to order a ticket? </p>
+            <div class="dropdown">
+                <script>
+                    function myFunction() {
+                      document.getElementById("demo").innerHTML = "Use our online methoods, or visit you closest theatre!"; 
+                      document.getElementById("demo").style.color = "red";     
+                    }
+                    </script>
+                <button class="dropbtn" type="button" onclick="myFunction()">Ask</button>
+                </div>
+               </td>
+    </tr>
+    <tr>
+        <td><p id="demo1"> How to get a discount on the ticket price? </p>
+            <div class="dropdown">
+                <script>
+                    function myFunction1() {
+                      document.getElementById("demo1").innerHTML = "Use our discount codes, linked in our page!"; 
+                      document.getElementById("demo1").style.color = "red";     
+                    }
+                    </script>
+                 <button class="dropbtn" type="button" onclick="myFunction1()">Ask</button>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><p id="demo2"> Can I reserve more than one ticket for the said price?</p>
+             <div class="dropdown">
+                 <script>
+                function myFunction2() {
+                    document.getElementById("demo2").innerHTML = "Yes you can reserve up to 10 tickets, providing ID."; 
+                    document.getElementById("demo2").style.color = "red";     
+                  }
+                  </script>
+                <button class="dropbtn" type="button" onclick="myFunction2()">Ask</button>
+             </div>
+        </td>
+    </tr>
+
+</table>
+</div>
+
+<div>
+    <div class="container1"> 
+         <div class="box1">
+         <div class="foto1"><img src="images\thetarescheme.png" width="100%" height="100%"></div>     
+         </div>
+   </div>
+</div>
+</div>
+<!--Rating-->
+<div class="move">
+<table
+cellspacing='2';
+cellpadding='1';
+border=0.5;>
+<thead>
+    <th>Rating</th>
+    <th>Date</th>
+</thead>
+<tr>
+    <td><a href="3"><u>movie depending</u></a></td>
+    <td>2021</td>
+</tr>
+</table>
+</div>
+<button class="dropbtn" type="button" id="hide">Hide</button>
+<button class="dropbtn" type="button" id="show">Show</button>
+<br>
+<br>
+<script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+</script>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <img id="drag1" src="images\icon\air6.png" draggable="true" ondragstart="drag(event)" width="100" height="100">
+
+</div>
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<img style="background-color: #670F4C" src="images/icon/air6.png" width="30%" height="10%"/>
+
+				<p class="footer-links">
+					<a href="index.html" class="link-1">Home</a>
+					
+					<a href="flightandhotels.html">Hotels</a>
+				
+					<a href="theatreandcinema1.html">Theatre&Cinema</a>
+			
+					<a href="contact.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Travel For Living © 2021</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>444 Rr.Adem Jashari</span> Peje, Kosove</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+383 - 46 - 127 - 682</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:mujajdreni@gmail.com">mujajdreni@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About Travel For Living</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/login/"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/login"><i class="fab fa-linkedin"></i></a>
+					<a href="https://github.com/"><i class="fab fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+
+</Body>

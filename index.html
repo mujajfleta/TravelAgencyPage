@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<HTML>
+<Head>
+    <Title>Travel For Living</Title>
+    <!-- Lidhja me css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel = "icon" href ="images/icon/images.png">
+    <!-- Lidhja me fontawesome icons,defer means to wait for the dom to be loaded -->
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <script defer src="fontawesome/js/all.js"></script>
+</Head>
+<Body onload="startWorker()">
+    <!-- header with icon -->
+        <a href="index.html">
+        <div class="icon">
+            <img style="background-color: #670F4C" src="images/icon/air6.png" width="5%" height="2%"/>
+            <h3><bold>Travel For Living</bold></h3>
+        </div>
+        </a>
+        <!--  NAVIGATION BAR -->
+        <div class="navbar">
+            <ul>
+                <li class="navbarLi"><a class="navbarLiLink " href="index.html"><strong>Home</strong></a></li>
+                <li class="navbarLi"><a class="navbarLiLink " href="flightandhotels.html"><strong>Hotels</strong></a></li>
+                <li class="navbarLi"><a class="navbarLiLink " href="theatreandcinema1.html"><strong>Theatre&Cinema</strong></a></li>
+                <li class="navbarLi" style="float:right"><a class="navbarLiLink "  href="signup.html"><strong>Sign up</strong></a></li>
+                <li class="navbarLi" style="float:right"><a class="active navbarLiLink" href="login.html" style="background-color: #CE225A;"><strong>Login</strong></a></li>
+            </ul>
+         </div> 
+         <!-- Booking form -->
+      <div class="booking" >
+            <form action="" class="booking-form">
+                <div class="booking-left">
+                    <h3 style="letter-spacing: 1px;">From</h3>
+                    <input type="text" class="search" id="current-location" >
+                    <h3 style="letter-spacing: 1px;">To</h3>
+                    <input type="text" class="search" placeholder="Choose your place of destination">
+                </div>
+                <div class="booking-right">
+                    <h3 style="letter-spacing: 1px;">Leaving on</h3>
+                    <input type="datetime-local" id="dt" class="date" >
+                    <h3 style="letter-spacing: 1px;">Returning on</h3>
+                    <input type="datetime-local" class="date">
+                </div>
+                
+                    <button type="submit" class="booking-button">Find</button>
+                
+            </form>
+     </div> 
+     <script>
+        var now = new Date();
+        now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+        document.getElementById('dt').value = now.toISOString().slice(0,16);
+     </script>
+
+    <h1 align="left" style="color: #361f33; margin-left: 80px; margin-top: 80px;"><bold>Book your holiday</bold></h1>
+    <h1 align="kleft" style="color: #361f33; margin-left: 80px; " ><bold>Browse last minute quarantine-free deals</bold></h1>
+
+        <div class="main">
+           
+            <div class="main-post"> 
+            <a href="#" class="image-link">
+                <h3 class="title">Paris, France</h3>
+                <h3 class="price">From 579 &euro;</h3> 
+                <h3 class="ofert">Now Open!</h3>
+            </a>
+            </div>
+           
+
+            <div class="other-post">
+                <div class="left-post">
+                    
+                    <div class="first-post">
+                    <a href="#" class="image-link">
+                        <h4 class="title-post">Thailand</h4>
+                        <h4 class="price-post">From 699 &euro;</h4>
+                    </a>
+                    </div>
+     
+                    <div class="second-post">
+                    <a href="#" class="image-link">
+                        <h4 class="title-post">Maldives</h3>
+                        <h4 class="price-post">From 850 &euro;</h4>
+                     </div> 
+                    </a>
+                </div>
+
+                <div class="right-post">
+                    
+                    <div class="third-post">
+                    <a href="#" class="image-link">
+                        <h4 class="title-post">Tokyo, Japan</h4>
+                        <h4 class="price-post">From 999 &euro;</h4>
+                    </a>
+                    </div>
+                     
+                   
+                    <div class="fourth-post"> 
+                    <a href="#" class="image-link">
+                        <h4 class="title-post">Finland</h4>
+                        <h4 class="price-post">From 499 &euro;</h4>
+                    </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <h3 align="kleft" style="color: #361f33; margin-left: 80px; " ><bold>Offert expires in: </bold><output id="result"></output></h3></p>
+
+        <script>
+        var w;
+
+        function startWorker() {
+        if (typeof(Worker) !== "undefined") {
+            if (typeof(w) == "undefined") {
+            w = new Worker("js/worker.js");
+            }
+            w.onmessage = function(event) {
+            document.getElementById("result").innerHTML = event.data;
+            };
+        } else {
+            document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+        }
+        }
+
+        function stopWorker() {
+        w.terminate();
+        w = undefined;
+        }
+        </script>
+
+    <h1 align="left" style="color: #361f33; margin-left: 80px; margin-top: 80px;"><bold>Explore experiences</bold></h1>
+
+    <section class="experiences">
+        <article id="first" class="post-experiences">
+            <div class="photo-experience">
+                <img src=" https://res.cloudinary.com/lastminute-contenthub/image/upload/c_fill,h_277,w_500/c_limit,w_300,h_999999/v1559846046/DAM/Photos/Other/Christmas/christmas-gift_t20_Rw4BOJ.jpg" alt="Christmas day">
+            </div>
+            <div class="description-experience">
+                <h3>Christmas gift days</h3>
+                <div class="svg-wrapper">
+                 
+                
+                     <svg height="150" width="320" xmlns="http://www.w3.org/2000/svg">
+                             <rect class="shape" height="60" width="320" />
+                    </svg>
+                    <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="post-experiences">
+            <div class="photo-experience">
+                <img src="https://res.cloudinary.com/lastminute-contenthub/image/upload/c_fill,h_205,w_370/c_limit,w_300,h_999999/v1559893021/DAM/Photos/Lifestyle/Theatre/shutterstock_529680172.jpg" alt="London Theatre">
+            </div>
+            <div class="description-experience">
+                <h3>London theatre shows</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Soluta et , odio 
+                     inventore dolores ut sunt aliquam?</p>
+            </div>
+        </article>
+
+        <article id="last" class="post-experiences">
+            <div class="photo-experience">
+                <img src="https://res.cloudinary.com/lastminute-contenthub/image/upload/c_fill,h_205,w_370/c_limit,w_300,h_999999/v1559907784/DAM/Photos/Lifestyle/Spa/spa_shutterstock_201591395.jpg" alt="Spa room">
+            </div>
+            <div  class="description-experience">
+                <h3>SPA days</h3>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Soluta et , odio 
+                     inventore dolores ut sunt aliquam?</p>
+            </div>
+        </article>
+        <a id="arrow-link" href="experience.html"><i  class="fas fa-angle-double-right" style="margin-left:100px; font-size: 120px; color: #ce225a;"></i></a>
+    </section>
+
+    <h1 align="left" style="color: #361f33; margin-left: 80px; margin-top: 80px;"><bold>What's your travel style?</bold></h1>
+
+    <div class="travel-style">
+
+        <article id="first-style" class="style">
+            
+            <img src="images/beach.jpg" alt="Sunseeker" width="100%" height="100%">
+            
+        </article>
+        <h3 style="margin-left: 10px;color: #361f33;">Sunseeker</h3>
+        <article class="style">
+            <img src="images/culture.jpg" alt="Cultural explorer" width="100%" height="100%">
+            
+        </article>
+        <h3 style="margin-left: 10px;color: #361f33;">Cultural Explorer</h3>
+        <article class="style">
+            <img src="images/couples.jpg" alt="Couples" width="100%" height="100%">
+            
+        </article>
+        <h3 style="margin-left: 10px;color: #361f33;">Couples</h3>
+        <article class="style">
+            <img src="images/family.jpg" alt="Family" width="100%" height="100%">
+            
+        </article>
+        <h3 style="margin-left: 10px;color: #361f33;">Family</h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<img style="background-color: #670F4C" src="images/icon/air6.png" width="30%" height="10%"/>
+
+				<p class="footer-links">
+					<a href="index.html" class="link-1">Home</a>
+					
+					<a href="flightandhotels.html">Hotels</a>
+				
+					<a href="theatreandcinema1.html">Theatre&Cinema</a>
+			
+					<a href="contact.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Travel For Living © 2021</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>444 Rr.Adem Jashari</span> Peje, Kosove</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+383 - 46 - 127 - 682</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:mujajdreni@gmail.com">mujajdreni@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About Travel For Living</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/login/"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/login"><i class="fab fa-linkedin"></i></a>
+					<a href="https://github.com/"><i class="fab fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+    
+</Body>
+    <script src="js/index.js"></script>
+</HTML>
